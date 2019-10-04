@@ -1,0 +1,7 @@
+name: KnockArena
+version: ${project.version}
+main: nl.bramkoene.knockarena.KnockArena
+api-version: 1.13
+authors: [Minestarnl]
+description: A minecraft knockback arena minigame
+website: bramkoene.nl
