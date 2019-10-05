@@ -1,0 +1,10 @@
+KnockArena
+
+Features:
+- Knock Arena
+- countdown
+- Scoreboard
+- coins - rewards
+- spectator mode
+- player manager
+- game manager

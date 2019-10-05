@@ -5,3 +5,10 @@ api-version: 1.13
 authors: [Minestarnl]
 description: A minecraft knockback arena minigame
 website: bramkoene.nl
+commands:
+  setarenaspawnpoint:
+    description: Sets an arena spawn point
+    usage: /setarenaspawnpoint
+    aliases:
+      - sasp
+    permission: knockarena.spawnpoint
