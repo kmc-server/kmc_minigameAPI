@@ -176,3 +176,16 @@
 [20:46:47] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6541ms or 130 ticks behind
 [20:52:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5077ms or 101 ticks behind
 [21:20:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5128ms or 102 ticks behind
+[21:44:18] [Server thread/INFO]: Stopping server
+[21:44:18] [Server thread/INFO]: [KnockArena] Disabling KnockArena v1.0-SNAPSHOT
+[21:44:18] [Server thread/INFO]: Saving players
+[21:44:18] [Server thread/INFO]: Saving worlds
+[21:44:18] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[21:44:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:44:18] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[21:44:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:44:19] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[21:44:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:44:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:44:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:44:19] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

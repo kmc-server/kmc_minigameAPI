@@ -72,7 +72,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetGameSpawnPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="493">
               <caret line="31" column="70" lean-forward="true" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -392,7 +392,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -403,7 +402,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,7 +566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetGameSpawnPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="493">
           <caret line="31" column="70" lean-forward="true" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
