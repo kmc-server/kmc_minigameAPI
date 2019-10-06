@@ -1,0 +1,11 @@
+nl\bramkoene\knockarena\ConfigManager.class
+nl\bramkoene\knockarena\Executors\JoinGame.class
+nl\bramkoene\knockarena\Executors\SetLobbySpawnPoints.class
+nl\bramkoene\knockarena\GameManager$1.class
+nl\bramkoene\knockarena\PlayerData\PlayerManager.class
+nl\bramkoene\knockarena\KnockArena.class
+nl\bramkoene\knockarena\Executors\CreateGame.class
+nl\bramkoene\knockarena\Executors\SetGameSpawnPoints.class
+nl\bramkoene\knockarena\Game\SpawnManager.class
+nl\bramkoene\knockarena\Events\PlayerEventHandler.class
+nl\bramkoene\knockarena\GameManager.class

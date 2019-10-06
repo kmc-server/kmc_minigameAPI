@@ -1,9 +1,11 @@
 package nl.bramkoene.knockarena;
 
 import nl.bramkoene.knockarena.Events.PlayerEventHandler;
-import nl.bramkoene.knockarena.Executors.SetSpawnPoints;
+import nl.bramkoene.knockarena.Executors.CreateGame;
+import nl.bramkoene.knockarena.Executors.JoinGame;
+import nl.bramkoene.knockarena.Executors.SetGameSpawnPoints;
+import nl.bramkoene.knockarena.Executors.SetLobbySpawnPoints;
 import nl.bramkoene.knockarena.PlayerData.PlayerManager;
-import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
@@ -20,7 +22,10 @@ public final class KnockArena extends JavaPlugin {
         // Plugin startup logic
         instanceClasses();
         getServer().getPluginManager().registerEvents(new PlayerEventHandler(this), this);
-        this.getCommand("setarenaspawnpoint").setExecutor(new SetSpawnPoints(this));
+        this.getCommand("setarenaspawnpoint").setExecutor(new SetGameSpawnPoints(this));
+        this.getCommand("setlobbyspawnpoint").setExecutor(new SetLobbySpawnPoints(this));
+        this.getCommand("creategame").setExecutor(new CreateGame(this));
+        this.getCommand("joingame").setExecutor(new JoinGame(this));
     }
 
     @Override

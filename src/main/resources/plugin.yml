@@ -11,4 +11,30 @@ commands:
     usage: /setarenaspawnpoint
     aliases:
       - sasp
-    permission: knockarena.spawnpoint
+    permission: KnockArena.Builder
+  setlobbyspawnpoint:
+    description: Sets an lobby spawn point
+    usage: /setlobbyspawnpoint
+    aliases:
+      - slsp
+    permission: KnockArena.Builder
+  creategame:
+    description: starts a game
+    usage: /creategame
+    aliases:
+      - ska
+    permission: KnockArena.Manager
+  joingame:
+    description: starts a game
+    usage: /joingame
+    aliases:
+      - ska
+    permission: KnockArena.Manager
+
+permissions:
+  KnockArena.Builder:
+    description: Allows to make spawnpoints and build stuff
+    default: true
+  KnockArena.Manager:
+    description: Allows to start/stop running games
+    default: true
