@@ -8,9 +8,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class ConfigManager {
-    KnockArena plugin;
+    MiniGameAPI plugin;
 
-    public ConfigManager(KnockArena pl){
+    public ConfigManager(MiniGameAPI pl){
         this.plugin = pl;
         setup();
     }

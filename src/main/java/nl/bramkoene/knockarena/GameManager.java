@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class GameManager implements Listener {
-    public KnockArena plugin;
+    public MiniGameAPI plugin;
     protected Location lobbySpawn;
     protected List<Location> gameSpawn = new ArrayList<Location>();
     private int lobbyCountDown = 10;
@@ -19,7 +19,7 @@ public class GameManager implements Listener {
     private boolean isStarted;
     private boolean isInLobby;
 
-    public GameManager(KnockArena pl){
+    public GameManager(MiniGameAPI pl){
         this.plugin = pl;
     }
 

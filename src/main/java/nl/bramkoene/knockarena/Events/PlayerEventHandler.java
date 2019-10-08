@@ -1,6 +1,6 @@
 package nl.bramkoene.knockarena.Events;
 
-import nl.bramkoene.knockarena.KnockArena;
+import nl.bramkoene.knockarena.MiniGameAPI;
 import nl.bramkoene.knockarena.PlayerData.PlayerManager;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -13,8 +13,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import java.util.UUID;
 
 public class PlayerEventHandler implements Listener {
-    public KnockArena plugin;
-    public PlayerEventHandler(KnockArena pl){
+    public MiniGameAPI plugin;
+    public PlayerEventHandler(MiniGameAPI pl){
         this.plugin = pl;
     }
 

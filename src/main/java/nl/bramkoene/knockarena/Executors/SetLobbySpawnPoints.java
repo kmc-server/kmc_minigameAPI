@@ -1,14 +1,14 @@
 package nl.bramkoene.knockarena.Executors;
 
-import nl.bramkoene.knockarena.KnockArena;
+import nl.bramkoene.knockarena.MiniGameAPI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class SetLobbySpawnPoints implements CommandExecutor {
-    public KnockArena plugin;
-    public SetLobbySpawnPoints(KnockArena pl){
+    public MiniGameAPI plugin;
+    public SetLobbySpawnPoints(MiniGameAPI pl){
         this.plugin = pl;
     }
 

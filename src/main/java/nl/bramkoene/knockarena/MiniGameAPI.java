@@ -11,11 +11,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.HashMap;
 import java.util.UUID;
 
-public final class KnockArena extends JavaPlugin {
+public final class MiniGameAPI extends JavaPlugin {
 
     public HashMap<UUID,PlayerManager> playermanager = new HashMap<UUID,PlayerManager>();
     public GameManager gameManager;
     public ConfigManager configManager;
+    public static MiniGameAPI miniGameAPI;
 
     @Override
     public void onEnable() {
@@ -26,6 +27,7 @@ public final class KnockArena extends JavaPlugin {
         this.getCommand("setlobbyspawnpoint").setExecutor(new SetLobbySpawnPoints(this));
         this.getCommand("creategame").setExecutor(new CreateGame(this));
         this.getCommand("joingame").setExecutor(new JoinGame(this));
+        miniGameAPI = this;
     }
 
     @Override
@@ -36,6 +38,14 @@ public final class KnockArena extends JavaPlugin {
     public void instanceClasses(){
         this.configManager = new ConfigManager(this);
         this.gameManager = new GameManager(this);
+    }
+
+    public static MiniGameAPI getMiniGameAPI() {
+        return miniGameAPI;
+    }
+
+    public static void setMiniGameAPI(MiniGameAPI miniGameAPI) {
+        MiniGameAPI.miniGameAPI = miniGameAPI;
     }
 
     public HashMap<UUID, PlayerManager> getPlayermanager() {
