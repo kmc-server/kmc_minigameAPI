@@ -2,19 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c194ff-38b0-4f91-aec1-a4bdec822b56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/CreateGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/JoinGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetGameSpawnPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetLobbySpawnPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetSpawnPoints.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/KnockArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/KnockArena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/ops.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/ops.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/plugins/KnockArena-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/plugins/KnockArena-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/spigot.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/data/raids_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/data/raids_nether.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Events/PlayerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Events/PlayerEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/CreateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/JoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetGameSpawnPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetGameSpawnPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Executors/SetLobbySpawnPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetLobbySpawnPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/Game/SpawnManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/MiniGameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/PlayerData/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/PlayerData/PlayerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/messages/titles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/messages/titles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/pluginplan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/pluginplan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/teams/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/knockarena/teams/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/TeamManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +61,139 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <folding>
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetGameSpawnPoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/PlayerData/PlayerManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestServer/spigot.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestServer/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/messages/titles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/gamestate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/GameState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/TeamManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetGameSpawnPoints.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetLobbySpawnPoints.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java" />
+        <option value="$PROJECT_DIR$/TestServer/spigot.yml" />
+        <option value="$PROJECT_DIR$/TestServer/start.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/messages/titles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -43,15 +204,184 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="656" />
-    <option name="height" value="456" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KnockArena" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KnockArena" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1428" />
+    <option name="height" value="1005" />
   </component>
   <component name="ProjectId" id="1RvCfUZXNxg6v1vpW7a2VfmzFfK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="Enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="Executors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="PlayerData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nl" type="462c0819:PsiDirectoryNode" />
+              <item name="bramkoene" type="462c0819:PsiDirectoryNode" />
+              <item name="minigameapi" type="462c0819:PsiDirectoryNode" />
+              <item name="teams" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KnockArena" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KnockArena" type="462c0819:PsiDirectoryNode" />
+              <item name="TestServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -78,7 +408,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Bash.start.sh">
+    <configuration name="start.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="KnockArena" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestServer" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestServer/start.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KnockArena build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -105,6 +448,11 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bash.start.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,15 +467,217 @@
     </task>
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1428" height="1005" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.24963924" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.28696606" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.18614718" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24963924" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.28696606" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.18614718" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/TeamManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetLobbySpawnPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/SetGameSpawnPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/spigot.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/messages/titles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/PlayerData/PlayerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

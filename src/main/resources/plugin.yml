@@ -1,6 +1,6 @@
 name: MiniGameAPI
 version: ${project.version}
-main: nl.bramkoene.knockarena.KnockArena
+main: nl.bramkoene.minigameapi.MiniGameAPI
 api-version: 1.13
 authors: [Minestarnl]
 description: A minecraft knockback arena minigame
@@ -11,30 +11,33 @@ commands:
     usage: /setarenaspawnpoint
     aliases:
       - sasp
-    permission: KnockArena.Builder
+    permission: MiniGameApi.Builder
   setlobbyspawnpoint:
     description: Sets an lobby spawn point
     usage: /setlobbyspawnpoint
     aliases:
       - slsp
-    permission: KnockArena.Builder
+    permission: MiniGameApi.Builder
   creategame:
     description: starts a game
     usage: /creategame
     aliases:
       - ska
-    permission: KnockArena.Manager
+    permission: MiniGameApi.Manager
   joingame:
     description: starts a game
     usage: /joingame
     aliases:
       - ska
-    permission: KnockArena.Manager
+    permission: MiniGameApi.join
 
 permissions:
-  KnockArena.Builder:
+  MiniGameApi.Builder:
     description: Allows to make spawnpoints and build stuff
-    default: true
-  KnockArena.Manager:
+    default: op
+  MiniGameApi.Manager:
     description: Allows to start/stop running games
+    default: op
+  MiniGameApi.join:
+    description: allows to join
     default: true
