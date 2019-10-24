@@ -1,5 +1,5 @@
 name: MiniGameAPI
-version: 1.0-SNAPSHOT
+version: 1.0.0.1
 main: nl.bramkoene.minigameapi.MiniGameAPI
 api-version: 1.13
 authors: [Minestarnl]
@@ -30,8 +30,21 @@ commands:
     aliases:
       - ska
     permission: MiniGameApi.join
+  buildminigame:
+    description: Allows you to create the game. This should be done after any arena has been build
+    usage: "Usage: /buildgame <gameType>"
+    permission: MiniGameApi.Builder
+  jointeam:
+    description: joins a team
+    usage: /jointeam <Player>
+    aliases:
+      - jt
+    permission: MiniGameApi.Team
 
 permissions:
+  MiniGameApi.Team:
+    description: allows usage of teams
+    default: true
   MiniGameApi.Builder:
     description: Allows to make spawnpoints and build stuff
     default: op

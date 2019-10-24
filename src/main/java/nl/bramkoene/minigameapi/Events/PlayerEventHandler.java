@@ -1,7 +1,7 @@
 package nl.bramkoene.minigameapi.Events;
 
 import nl.bramkoene.minigameapi.MiniGameAPI;
-import nl.bramkoene.minigameapi.PlayerData.PlayerManager;
+import nl.bramkoene.minigameapi.teams.TeamManager;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -32,11 +32,6 @@ public class PlayerEventHandler implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event){
-
-        Player player = event.getPlayer();
-
-        UUID uuid = player.getUniqueId();
-
-        plugin.playermanager.put(uuid,new PlayerManager(uuid, false, 0, false));
+        TeamManager.createTeam(event.getPlayer());
     }
 }

@@ -16,9 +16,9 @@ public class CreateGame implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
         if(sender.isOp()){
             Player player = (Player)sender;
-            plugin.getGameManager().setupGame();
+//            plugin.getGameController().setupGame();
             plugin.getTitles().sendTitleToAllPlayers("A New game has been started", "Join now via /joingame");
-            plugin.getGameManager().lobbyWait(player);
+//            plugin.getGameController().lobbyWait(player);
         }
 
         return false;

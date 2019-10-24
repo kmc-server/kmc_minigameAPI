@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="KnockArena" />
+        <module name="MiniGameApi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="KnockArena" target="1.8" />
+      <module name="ExampleGamemode" target="1.8" />
+      <module name="MiniGameApi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

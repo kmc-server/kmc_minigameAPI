@@ -3,28 +3,25 @@ package nl.bramkoene.minigameapi;
 import nl.bramkoene.minigameapi.Events.PlayerEventHandler;
 import nl.bramkoene.minigameapi.Executors.CreateGame;
 import nl.bramkoene.minigameapi.Executors.JoinGame;
-import nl.bramkoene.minigameapi.Executors.SetGameSpawnPoints;
-import nl.bramkoene.minigameapi.Executors.SetLobbySpawnPoints;
-import nl.bramkoene.minigameapi.PlayerData.PlayerManager;
+import nl.bramkoene.minigameapi.GameCreation.GameCreatorCommand;
+import nl.bramkoene.minigameapi.GameCreation.SetGameSpawnPoints;
+import nl.bramkoene.minigameapi.GameCreation.SetLobbySpawnPoints;
 import nl.bramkoene.minigameapi.messages.titles;
+import nl.bramkoene.minigameapi.teams.JoinTeamCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.HashMap;
-import java.util.UUID;
+import java.util.Objects;
 
 public final class MiniGameAPI extends JavaPlugin {
 
-    public HashMap<UUID,PlayerManager> playermanager = new HashMap<UUID,PlayerManager>();
-    public GameManager gameManager;
-    public ConfigManager configManager;
-    public titles titles;
-    public static MiniGameAPI miniGameAPI;
+    private GameController gameController;
+    private ConfigManager configManager;
+    private titles titles;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         instanceClasses();
-        miniGameAPI = this;
     }
 
     @Override
@@ -32,32 +29,26 @@ public final class MiniGameAPI extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    public void instanceClasses(){
+    private void instanceClasses(){
         this.configManager = new ConfigManager(this);
-        this.gameManager = new GameManager(this);
+        this.gameController = new GameController();
         this.titles = new titles();
 
         getServer().getPluginManager().registerEvents(new PlayerEventHandler(this), this);
 
-        this.getCommand("setarenaspawnpoint").setExecutor(new SetGameSpawnPoints(this));
-        this.getCommand("setlobbyspawnpoint").setExecutor(new SetLobbySpawnPoints(this));
-        this.getCommand("creategame").setExecutor(new CreateGame(this));
-        this.getCommand("joingame").setExecutor(new JoinGame(this));
-    }
+        // Game Building Commmands
+        Objects.requireNonNull(this.getCommand("setarenaspawnpoint")).setExecutor(new SetGameSpawnPoints(this));
+        Objects.requireNonNull(this.getCommand("setlobbyspawnpoint")).setExecutor(new SetLobbySpawnPoints(this));
+        Objects.requireNonNull(this.getCommand("buildminigame")).setExecutor(new GameCreatorCommand(this));
 
-    public static MiniGameAPI getMiniGameAPI() {
-        return miniGameAPI;
-    }
+        // Game Playing Commands
+        Objects.requireNonNull(this.getCommand("creategame")).setExecutor(new CreateGame(this));
+        Objects.requireNonNull(this.getCommand("joingame")).setExecutor(new JoinGame(this));
 
-    public static void setMiniGameAPI(MiniGameAPI miniGameAPI) {
-        MiniGameAPI.miniGameAPI = miniGameAPI;
-    }
+        // Team Commands
+        Objects.requireNonNull(this.getCommand("jointeam")).setExecutor(new JoinTeamCommand(this));
 
-    public HashMap<UUID, PlayerManager> getPlayermanager() {
-        return playermanager;
-    }
-    public GameManager getGameManager() {
-        return gameManager;
+
     }
     public ConfigManager getConfigManager() {
         return configManager;

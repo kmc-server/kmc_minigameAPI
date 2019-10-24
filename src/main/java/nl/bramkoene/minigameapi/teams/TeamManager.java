@@ -10,42 +10,21 @@ public class TeamManager {
     public static List<Team> teams = new ArrayList<Team>();
     public static HashMap<Player, Team> playerTeamHashMap = new HashMap<>();
 
-    public void createTeam(Player sender, String name){
-        Team team = new Team(name);
+    public static void createTeam(Player sender){
+        Team team = new Team();
         team.addPlayer(sender);
+        team.setLeader(sender);
     }
 
-    public boolean hasTeam(String name){
-        for (int i = 0; i < teams.size(); i++){
-            Team team = teams.get(i);
-            if(team.getName() == name){
-                return true;
-            }
-
-            if(i == teams.size()){
-                return false;
-            }
-        }
-        return false;
+    public static Team getUserTeam(Player player){
+        return playerTeamHashMap.get(player);
     }
 
-    public Team getTeamByName(String name){
-        for (int i = 0; i < teams.size(); i++){
-            Team team = teams.get(i);
-            if(team.getName() == name){
-                return team;
-            }
-
-            if(i == teams.size()){
-                new Team("Poep");
-            }
+    public static void joinTeam(Player sender, Player leader) throws Exception{
+        if(!playerTeamHashMap.containsKey(leader)){
+            throw new Exception("User does not exists");
         }
-        return new Team("test");
-    }
-
-    public void joinTeam(Player sender, String name){
-        if(hasTeam(name)){
-            getTeamByName(name).addPlayer(sender);
-        }
+        Team team = playerTeamHashMap.get(leader);
+        team.addPlayer(sender);
     }
 }

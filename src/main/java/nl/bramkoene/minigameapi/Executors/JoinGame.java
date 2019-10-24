@@ -14,8 +14,8 @@ public class JoinGame implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
         if(sender instanceof Player){
-            plugin.getGameManager().lobbyWait((Player) sender);
-            plugin.getTitles().sendTitleToAllPlayers("The game has now: " + plugin.getGameManager().joinedPlayers.size(), "To join use /joingame");
+//            plugin.getGameController().lobbyWait((Player) sender);
+//            plugin.getTitles().sendTitleToAllPlayers("The game has now: " + plugin.getGameController().joinedPlayers.size(), "To join use /joingame");
         }
 
         return false;
