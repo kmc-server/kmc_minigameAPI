@@ -1,4 +1,6 @@
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/teams/JoinTeamCommand.java
+/Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameCreation/ChatInteractionGameBuilding.java
+/Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/Executors/getMinigames.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/messages/titles.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameCreation/BuildMinigame.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/Enums/BuildGameState.java
@@ -7,6 +9,8 @@
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameConnector.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java
+/Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameCreation/GameConfigBean.java
+/Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/messages/GameMessages.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.java
 /Users/Bram/Documents/Programming/KnockArena/src/main/java/nl/bramkoene/minigameapi/Enums/GameState.java

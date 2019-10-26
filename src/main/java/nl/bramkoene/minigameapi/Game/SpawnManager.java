@@ -1,7 +1,6 @@
 package nl.bramkoene.minigameapi.Game;
 
 import nl.bramkoene.minigameapi.GameConnector;
-import nl.bramkoene.minigameapi.MiniGameAPI;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
@@ -10,8 +9,8 @@ import java.util.List;
 import java.util.Random;
 
 public class SpawnManager {
-    public List<Location> spawnLocations = new ArrayList<Location>();
-    public GameConnector game;
+    private final List<Location> spawnLocations = new ArrayList<>();
+    private final GameConnector game;
     public Location lobbySpawn;
 
     public SpawnManager(GameConnector pl){

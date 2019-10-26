@@ -1,8 +1,14 @@
+nl/bramkoene/minigameapi/Executors/getMinigames.class
 nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.class
+nl/bramkoene/minigameapi/GameCreation/ChatInteractionGameBuilding$1.class
+nl/bramkoene/minigameapi/GameCreation/BuildMinigame$1.class
 nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.class
 nl/bramkoene/minigameapi/Enums/BuildGameState.class
 nl/bramkoene/minigameapi/GameCreation/BuildMinigame.class
+nl/bramkoene/minigameapi/GameCreation/ChatInteractionGameBuilding.class
+nl/bramkoene/minigameapi/GameCreation/GameConfigBean.class
 nl/bramkoene/minigameapi/GameController.class
 nl/bramkoene/minigameapi/teams/JoinTeamCommand.class
 nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.class
+nl/bramkoene/minigameapi/messages/GameMessages.class
 nl/bramkoene/minigameapi/GameConnector.class

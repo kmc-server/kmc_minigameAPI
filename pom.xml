@@ -6,7 +6,7 @@
 
     <groupId>nl.bramkoene</groupId>
     <artifactId>MiniGameApi</artifactId>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <packaging>jar</packaging>
 
     <name>MiniGameApi</name>
@@ -55,7 +55,7 @@
                         <phase>install</phase>
                         <configuration>
                             <target>
-                                <copy file="target\${name}-${version}.${packaging}" tofile="TestServer/plugins/${name}.${packaging}"/>
+                                <copy file="target\${project.name}-${project.version}.${project.packaging}" tofile="TestServer/plugins/${project.name}.${project.packaging}"/>
                             </target>
                         </configuration>
                         <goals>
@@ -90,11 +90,6 @@
             <artifactId>spigot-api</artifactId>
             <version>1.14.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
         </dependency>
     </dependencies>
 

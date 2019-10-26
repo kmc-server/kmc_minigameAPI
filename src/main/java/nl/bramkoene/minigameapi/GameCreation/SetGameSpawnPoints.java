@@ -10,22 +10,21 @@ import org.bukkit.entity.Player;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class SetGameSpawnPoints implements CommandExecutor {
-    public MiniGameAPI plugin;
+    private final MiniGameAPI plugin;
     public SetGameSpawnPoints(MiniGameAPI pl){
         this.plugin = pl;
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
-        if((sender.isOp() || sender.hasPermission("MiniGameApi.Builder") || sender.getName() == "minestarnl") && sender instanceof Player){
+        if((sender.isOp() || sender.hasPermission("MiniGameApi.Builder") || sender.getName().equals("minestarnl")) && sender instanceof Player){
             Player player = (Player)sender;
-            List<Location> locations = new ArrayList<Location>();
+            List<Location> locations = new ArrayList<>();
             if(plugin.getConfigManager().getCollectors().contains("GameSpawn")) {
-                List<Location> locs = (List<Location>) plugin.getConfigManager().getCollectors().getList("GameSpawn");
-                for (Location location : locs) {
-                    locations.add(location);
-                }
+                @SuppressWarnings("unchecked") List<Location> locs = (List<Location>) plugin.getConfigManager().getCollectors().getList("GameSpawn");
+                locations.addAll(locs);
             }
             locations.add(player.getLocation());
             plugin.getConfigManager().getCollectors().set("GameSpawn", locations);

@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class JoinTeamCommand implements CommandExecutor {
-    MiniGameAPI plugin;
+    private final MiniGameAPI plugin;
     public JoinTeamCommand(MiniGameAPI pl){
         this.plugin = pl;
     }

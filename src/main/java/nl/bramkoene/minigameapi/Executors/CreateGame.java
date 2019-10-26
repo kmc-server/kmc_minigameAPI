@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class CreateGame implements CommandExecutor {
-    public MiniGameAPI plugin;
+    private final MiniGameAPI plugin;
     public CreateGame(MiniGameAPI pl){
         this.plugin = pl;
     }

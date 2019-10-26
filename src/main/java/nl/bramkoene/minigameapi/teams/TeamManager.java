@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class TeamManager {
-    public static List<Team> teams = new ArrayList<Team>();
-    public static HashMap<Player, Team> playerTeamHashMap = new HashMap<>();
+    public static List<Team> teams = new ArrayList<>();
+    public static final HashMap<Player, Team> playerTeamHashMap = new HashMap<>();
 
     public static void createTeam(Player sender){
         Team team = new Team();

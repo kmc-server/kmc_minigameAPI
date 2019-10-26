@@ -5,5 +5,6 @@ public enum BuildGameState {
     CHOOSING_NAME,
     SETTING_LOBBY_SPAWN_POINT,
     SETTING_GAME_SPAWN_POINTS,
-    SETTING_KIT
+    SETTING_KIT,
+    SAVE
 }

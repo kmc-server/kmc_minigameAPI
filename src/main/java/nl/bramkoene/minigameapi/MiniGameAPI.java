@@ -3,6 +3,8 @@ package nl.bramkoene.minigameapi;
 import nl.bramkoene.minigameapi.Events.PlayerEventHandler;
 import nl.bramkoene.minigameapi.Executors.CreateGame;
 import nl.bramkoene.minigameapi.Executors.JoinGame;
+import nl.bramkoene.minigameapi.Executors.getMinigames;
+import nl.bramkoene.minigameapi.GameCreation.ChatInteractionGameBuilding;
 import nl.bramkoene.minigameapi.GameCreation.GameCreatorCommand;
 import nl.bramkoene.minigameapi.GameCreation.SetGameSpawnPoints;
 import nl.bramkoene.minigameapi.GameCreation.SetLobbySpawnPoints;
@@ -14,13 +16,14 @@ import java.util.Objects;
 
 public final class MiniGameAPI extends JavaPlugin {
 
-    private GameController gameController;
     private ConfigManager configManager;
     private titles titles;
+    private static MiniGameAPI miniGameAPI;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
+        miniGameAPI = this;
         instanceClasses();
     }
 
@@ -31,10 +34,13 @@ public final class MiniGameAPI extends JavaPlugin {
 
     private void instanceClasses(){
         this.configManager = new ConfigManager(this);
-        this.gameController = new GameController();
+        GameController gameController = new GameController();
         this.titles = new titles();
 
         getServer().getPluginManager().registerEvents(new PlayerEventHandler(this), this);
+        getServer().getPluginManager().registerEvents(new ChatInteractionGameBuilding(), this);
+        // General info
+        Objects.requireNonNull(this.getCommand("getminigames")).setExecutor(new getMinigames(this));
 
         // Game Building Commmands
         Objects.requireNonNull(this.getCommand("setarenaspawnpoint")).setExecutor(new SetGameSpawnPoints(this));
@@ -55,5 +61,9 @@ public final class MiniGameAPI extends JavaPlugin {
     }
     public nl.bramkoene.minigameapi.messages.titles getTitles() {
         return titles;
+    }
+
+    public static MiniGameAPI getMiniGameAPI() {
+        return miniGameAPI;
     }
 }

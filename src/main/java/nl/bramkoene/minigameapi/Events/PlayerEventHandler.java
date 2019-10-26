@@ -3,17 +3,16 @@ package nl.bramkoene.minigameapi.Events;
 import nl.bramkoene.minigameapi.MiniGameAPI;
 import nl.bramkoene.minigameapi.teams.TeamManager;
 import org.bukkit.Material;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 
-import java.util.UUID;
+import java.util.Objects;
 
 public class PlayerEventHandler implements Listener {
-    public MiniGameAPI plugin;
+    private MiniGameAPI plugin;
     public PlayerEventHandler(MiniGameAPI pl){
         this.plugin = pl;
     }
@@ -25,7 +24,7 @@ public class PlayerEventHandler implements Listener {
 
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent event){
-        if(event.getPlayer().getWorld().getBlockAt(event.getTo()).getType() == Material.LAVA){
+        if(event.getPlayer().getWorld().getBlockAt(Objects.requireNonNull(Objects.requireNonNull(event.getTo()))).getType() == Material.LAVA){
 //            event.getPlayer().teleport(getSpawnLocation());
         }
     }

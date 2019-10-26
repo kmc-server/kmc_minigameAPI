@@ -1,5 +1,5 @@
 name: MiniGameAPI
-version: 1.0.0.1
+version: 1.0.0.2
 main: nl.bramkoene.minigameapi.MiniGameAPI
 api-version: 1.13
 authors: [Minestarnl]
@@ -40,8 +40,15 @@ commands:
     aliases:
       - jt
     permission: MiniGameApi.Team
+  getminigames:
+    description: Shows all installed minigames
+    usage: /getminigames
+    permission: MiniGameApi.Info
 
 permissions:
+  MiniGameApi:
+    Info: shows info of the api
+    default: true
   MiniGameApi.Team:
     description: allows usage of teams
     default: true

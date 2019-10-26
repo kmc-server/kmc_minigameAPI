@@ -7,10 +7,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class JoinGame implements CommandExecutor {
-    public MiniGameAPI plugin;
+    private final MiniGameAPI plugin;
     public JoinGame(MiniGameAPI plugin){
         this.plugin = plugin;
     }
+    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
         if(sender instanceof Player){

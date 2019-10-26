@@ -40,8 +40,15 @@ commands:
     aliases:
       - jt
     permission: MiniGameApi.Team
+  getminigames:
+    description: Shows all installed minigames
+    usage: /getminigames
+    permission: MiniGameApi.Info
 
 permissions:
+  MiniGameApi:
+    Info: shows info of the api
+    default: true
   MiniGameApi.Team:
     description: allows usage of teams
     default: true

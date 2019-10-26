@@ -1,8 +1,10 @@
 package nl.bramkoene.minigameapi.GameCreation;
 
+import nl.bramkoene.minigameapi.Enums.BuildGameState;
 import nl.bramkoene.minigameapi.GameConnector;
 import nl.bramkoene.minigameapi.GameController;
 import nl.bramkoene.minigameapi.MiniGameAPI;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -10,7 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GameCreatorCommand implements CommandExecutor {
-    public MiniGameAPI plugin;
+    private final MiniGameAPI plugin;
     public GameCreatorCommand(MiniGameAPI pl){
         this.plugin = pl;
     }
@@ -27,15 +29,21 @@ public class GameCreatorCommand implements CommandExecutor {
         }
 
         GameConnector game;
-
         try{
             game = GameController.getGameFromName(args[0]);
+            BuildMinigame.addPlayerToBuildingList(game, (Player) sender);
+            try{
+                BuildMinigame.setBuildGameState((Player) sender, BuildGameState.CHOOSING_NAME);
+            }catch(Exception e){
+                Bukkit.getLogger().warning(e.getMessage());
+                e.printStackTrace();
+            }
+
         }catch(Exception e){
             sender.sendMessage(ChatColor.RED + e.getMessage());
+            e.printStackTrace();
             return false;
         }
-
-
 
         return true;
     }

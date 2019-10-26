@@ -9,9 +9,9 @@ import java.util.List;
 
 public class Team {
 
-    protected List<Player> players = new ArrayList<>();
+    private final List<Player> players = new ArrayList<>();
     protected GameState gameState = GameState.FREE;
-    protected Player leader;
+    private Player leader;
     protected GameConnector currentGame;
 
     public void addPlayer(Player player){

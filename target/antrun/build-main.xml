@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="target\MiniGameApi-1.0.0.1.jar" tofile="TestServer/plugins/MiniGameApi.jar"/>
+  <copy file="target\MiniGameApi-1.0.0.2.jar" tofile="TestServer/plugins/MiniGameApi.jar"/>
 </target>
 </project>

@@ -1,0 +1,4 @@
+buildmessages:
+  setLobbyLocation: "To set a lobby location go to the location and type 'here'."
+  setGameLocation: "To set a game location go to the location and type 'here'. Do this for every location you want players to be able to spawn. After you finish type 'done'."
+  setGameName: "Please type and unique name for this arena."
