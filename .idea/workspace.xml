@@ -2,56 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c194ff-38b0-4f91-aec1-a4bdec822b56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Bram.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/getMinigames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/ChatInteractionGameBuilding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/GameConfigBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/messages/GameMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lang.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/ConfigManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Enums/BuildGameState.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Enums/GameState.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Enums/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Enums/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Enums/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Events/PlayerEventHandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Events/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Events/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Events/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/CreateGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/JoinGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/getMinigames.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Executors/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Game/SpawnManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Game/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Game/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/Game/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameConnector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/ChatInteractionGameBuilding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/GameConfigBean.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/GameCreation/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/MiniGameAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/messages/GameMessages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/messages/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/messages/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/messages/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/messages/titles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/JoinTeamCommand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/Team.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/TeamManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nl/bramkoene/minigameapi/teams/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/overview-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniGameApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MiniGameApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/plugins/MiniGameApi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/plugins/MiniGameApi.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/BuildGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Enums/BuildGameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Events/PlayerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Events/PlayerEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/CreateGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Executors/JoinGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/Game/SpawnManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/BuildMinigame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/BuildMinigame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/MiniGameAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/JoinTeamCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/JoinTeamCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/bramkoene/minigameapi/teams/TeamManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MiniGameApi-1.0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MiniGameApi-1.0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/ConfigManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Enums/BuildGameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Enums/BuildGameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Events/PlayerEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Events/PlayerEventHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Executors/CreateGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Executors/CreateGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Executors/JoinGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Executors/JoinGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Game/SpawnManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/Game/SpawnManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/BuildMinigame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/BuildMinigame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/SetGameSpawnPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/GameCreation/SetLobbySpawnPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/MiniGameAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/MiniGameAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/JoinTeamCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/JoinTeamCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/TeamManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/bramkoene/minigameapi/teams/TeamManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-MiniGameApi-1.0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-MiniGameApi-1.0.0.1.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +113,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -201,7 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570223799210</updated>
       <workItem from="1571944240436" duration="337000" />
-      <workItem from="1571944600722" duration="86444000" />
+      <workItem from="1571944600722" duration="86782000" />
     </task>
     <servers />
   </component>
@@ -234,6 +260,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="masterDetails">
     <states>
