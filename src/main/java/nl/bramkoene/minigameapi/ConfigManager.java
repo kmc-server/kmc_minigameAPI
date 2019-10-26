@@ -3,11 +3,14 @@ package nl.bramkoene.minigameapi;
 import nl.bramkoene.minigameapi.GameCreation.GameConfigBean;
 import nl.bramkoene.minigameapi.messages.GameMessages;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.inventory.ItemStack;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 @SuppressWarnings("ResultOfMethodCallIgnored")
 public class ConfigManager {
@@ -121,12 +124,66 @@ public class ConfigManager {
         return gameMessages;
     }
 
+    /**
+     * Saves the given bean to the config files.
+     * @param game a {@link GameConfigBean} that needs to be saved after creation
+     * @return a succes message. This is not something important
+     */
     public String saveGameBean(GameConfigBean game){
-        String path = "Games." + game.getGameName() + "." + game.getUniqueName();
+        String path = path(game.getGameName(), game.getUniqueName());
         getCollectors().set(path + ".kit", game.getKit());
         getCollectors().set(path + ".spawns", game.getGameLocations());
         getCollectors().set(path + ".lobby", game.getLobbyLocation());
+        getCollectors().set(path + ".sign", game.getSignLocation());
+        getCollectors().set(path + ".minPlayers", game.getMinPlayers());
+        getCollectors().set(path + ".teamPlayers", game.getTeamPlayers());
+//        getCollectors().set(path + ".respawn", game.get)
         saveCollectors();
         return "Succesfully saved the config";
+    }
+
+    /**
+     * Returns a path to the gamebean config
+     * @param gameName the game name registered from other addons to the api
+     * @param uniqueName the unique name also known as the arena
+     * @return the path to the game bean
+     */
+    public String path(String gameName, String uniqueName){
+        return "Games." + gameName + "." + uniqueName;
+    }
+
+    /**
+     * Takes a gameName and a uniqueName for the config and then returns a gamebean for that specific game
+     * @param gameName the game name registered from other addons to the api
+     * @param uniqueName the unique name also known as the arena
+     * @return a {@link GameConfigBean} that contains all config options
+     * @throws Exception Throws exception if something is missing in the config file
+     */
+    public GameConfigBean getGameConfigbean(String gameName, String uniqueName) throws Exception{
+        if(!getCollectors().contains(path(gameName, uniqueName))){
+            throw new Exception("This game does not seem to exists");
+        }
+
+        GameConfigBean game = new GameConfigBean();
+        // First we set the kit. This is a very diffelcult process if no understand message @minestarnl#6969
+        List<ItemStack> kit = (List<ItemStack>) getCollectors().getList(path(gameName, uniqueName) + ".kit");
+        if (kit == null) throw new Exception("Kit is null please contact an IT guy");
+        ItemStack[] items = (ItemStack[]) kit.toArray();
+        game.setKit(items);
+
+        // Then we get the game locations
+        List<Location> locs = (List<Location>) getCollectors().getList(path(gameName, uniqueName) + ".spawns");
+        game.setGameLocations(locs);
+
+        // Now we get the other 'easy' things
+        game.setGameName(gameName);
+        game.setUniqueName(uniqueName);
+        game.setLobbyLocation(getCollectors().getLocation(path(gameName, uniqueName) + ".lobby"));
+        game.setTeamPlayers(getCollectors().getInt(path(gameName, uniqueName) + ".teamPlayers"));
+        game.setMinPlayers(getCollectors().getInt(path(gameName, uniqueName) + ".minPlayers"));
+//        game.setAllowRespawn(getCollectors().getBoolean(path(gameName, uniqueName) + ".lobby"));
+        game.setSignLocation(getCollectors().getLocation(path(gameName, uniqueName) + ".sign"));
+
+        return game;
     }
 }

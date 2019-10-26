@@ -2,6 +2,7 @@ package nl.bramkoene.minigameapi;
 
 import nl.bramkoene.minigameapi.Enums.GameState;
 import nl.bramkoene.minigameapi.Game.SpawnManager;
+import nl.bramkoene.minigameapi.GameCreation.GameConfigBean;
 import nl.bramkoene.minigameapi.teams.Team;
 import org.bukkit.Location;
 
@@ -10,21 +11,29 @@ import java.util.List;
 
 @SuppressWarnings("SameReturnValue")
 public class GameConnector{
+    // Overridable variables
     public String gameName = "this";
+
+    // These values are minimal values for the config
+    public int minPlayers = 2;
+    public int teamPlayers = 1;
+    public boolean allowRespawn = true;
+
     private List<Team> joinedTeams = new ArrayList<>();
 
+    protected GameConfigBean gameConfig;
     protected Location lobbySpawn;
     private SpawnManager spawnManager;
     private int lobbyCountDown = 10;
     private int playerNeeded = 2;
     private GameState gameState = GameState.FREE;
 
-    public GameConnector(){
+    public GameConnector(GameConfigBean game){
+        this.gameConfig = game;
         this.spawnManager = new SpawnManager(this);
     }
 
-    public boolean onDeath(){
-        return false;
+    public void Respawn(){
     }
 
     public void InitGame(){

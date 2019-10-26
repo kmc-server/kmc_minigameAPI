@@ -6,7 +6,6 @@ import org.bukkit.inventory.ItemStack;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class GameConfigBean implements Serializable {
@@ -16,6 +15,10 @@ public class GameConfigBean implements Serializable {
     private Location lobbyLocation;
     private ItemStack[] kit;
     private BuildGameState state;
+    private int minPlayers;
+    private int teamPlayers;
+    private boolean allowRespawn;
+    private Location signLocation;
 
     public String getUniqueName() {
         return uniqueName;
@@ -63,6 +66,38 @@ public class GameConfigBean implements Serializable {
 
     public void setState(BuildGameState state) {
         this.state = state;
+    }
+
+    public int getMinPlayers() {
+        return minPlayers;
+    }
+
+    public void setMinPlayers(int minPlayers) {
+        this.minPlayers = minPlayers;
+    }
+
+    public int getTeamPlayers() {
+        return teamPlayers;
+    }
+
+    public void setTeamPlayers(int teamPlayers) {
+        this.teamPlayers = teamPlayers;
+    }
+
+    public boolean isAllowRespawn() {
+        return allowRespawn;
+    }
+
+    public void setAllowRespawn(boolean allowRespawn) {
+        this.allowRespawn = allowRespawn;
+    }
+
+    public Location getSignLocation() {
+        return signLocation;
+    }
+
+    public void setSignLocation(Location signLocation) {
+        this.signLocation = signLocation;
     }
 
     public void addGameLocation(Location gamelocation){

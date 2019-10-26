@@ -52,6 +52,8 @@ class BuildMinigame {
 //                    player.sendMessage(gameMessages.getGameLocationMessage());
                     player.sendMessage(ChatColor.YELLOW + "To set a game location go to the location and type 'here'. Do this for every location you want players to be able to spawn. After you finish type 'done'.");
                     break;
+                case PLACING_SIGN:
+                    player.sendMessage(ChatColor.YELLOW + "Please place an oak sign on the place where you want the Join sign to be");
                 case SAVE:
 //                    player.sendMessage(gameMessages.toString());
                     player.sendMessage(ChatColor.YELLOW + "Succesfully made arena");

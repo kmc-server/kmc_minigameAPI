@@ -7,8 +7,8 @@ import java.util.*;
 
 public class
 GameController implements Listener {
-    private static final List<GameConnector> CreatedGames = new ArrayList<>();
-    public static final List<GameConnector> registeredGames = new ArrayList<>();
+    private static List<GameConnector> CreatedGames = new ArrayList<>();
+    public static List<GameConnector> registeredGames = new ArrayList<>();
 
     public static void RegisterGamemode(GameConnector gameMode){
         registeredGames.add(gameMode);

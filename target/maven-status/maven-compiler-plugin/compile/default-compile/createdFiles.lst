@@ -11,4 +11,5 @@ nl/bramkoene/minigameapi/GameController.class
 nl/bramkoene/minigameapi/teams/JoinTeamCommand.class
 nl/bramkoene/minigameapi/GameCreation/GameCreatorCommand.class
 nl/bramkoene/minigameapi/messages/GameMessages.class
+nl/bramkoene/minigameapi/Events/SignClickHandler.class
 nl/bramkoene/minigameapi/GameConnector.class
