@@ -11,7 +11,6 @@ public class Team {
 
     private final List<Player> players = new ArrayList<>();
     protected GameState gameState = GameState.FREE;
-    private Player leader;
     protected GameConnector currentGame;
 
     public void addPlayer(Player player){
@@ -20,6 +19,5 @@ public class Team {
     }
 
     public void setLeader(Player leader){
-        this.leader =leader;
     }
 }

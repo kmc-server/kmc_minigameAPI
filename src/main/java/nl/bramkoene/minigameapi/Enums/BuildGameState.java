@@ -3,7 +3,7 @@ package nl.bramkoene.minigameapi.Enums;
 public enum BuildGameState {
     DEFAULT,
     CHOOSING_NAME,
-    CHOOSING_MAX_PLAYERS,
+    CHOOSING_MIN_PLAYERS,
     CHOOSING_TEAM_SIZE,
     CHOOSING_ALLOW_RESPAWN,
     SETTING_LOBBY_SPAWN_POINT,

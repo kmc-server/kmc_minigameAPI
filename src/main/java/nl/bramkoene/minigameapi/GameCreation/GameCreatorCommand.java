@@ -12,9 +12,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GameCreatorCommand implements CommandExecutor {
-    private final MiniGameAPI plugin;
     public GameCreatorCommand(MiniGameAPI pl){
-        this.plugin = pl;
     }
 
     @Override

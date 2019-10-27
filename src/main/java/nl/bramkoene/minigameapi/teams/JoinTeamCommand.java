@@ -8,9 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class JoinTeamCommand implements CommandExecutor {
-    private final MiniGameAPI plugin;
     public JoinTeamCommand(MiniGameAPI pl){
-        this.plugin = pl;
     }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
@@ -24,7 +22,6 @@ public class JoinTeamCommand implements CommandExecutor {
                 }catch(Exception e){
                     sender.sendMessage(e.getMessage());
                 }
-
             }
         }
         sender.sendMessage(ChatColor.YELLOW + "No player with that name found please try again");

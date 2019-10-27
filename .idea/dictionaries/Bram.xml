@@ -2,7 +2,16 @@
   <dictionary name="Bram">
     <words>
       <w>buildmessages</w>
+      <w>buildminigame</w>
+      <w>creategame</w>
+      <w>getminigames</w>
+      <w>joingame</w>
+      <w>jointeam</w>
       <w>minestarnl</w>
+      <w>minigameapi</w>
+      <w>setarenaspawnpoint</w>
+      <w>setlobbyspawnpoint</w>
+      <w>teamjoin</w>
     </words>
   </dictionary>
 </component>

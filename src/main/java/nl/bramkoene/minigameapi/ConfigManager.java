@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-@SuppressWarnings("ResultOfMethodCallIgnored")
+@SuppressWarnings({"ResultOfMethodCallIgnored", "unchecked"})
 public class ConfigManager {
     private final MiniGameAPI plugin;
 
@@ -137,7 +137,7 @@ public class ConfigManager {
         getCollectors().set(path + ".sign", game.getSignLocation());
         getCollectors().set(path + ".minPlayers", game.getMinPlayers());
         getCollectors().set(path + ".teamPlayers", game.getTeamPlayers());
-//        getCollectors().set(path + ".respawn", game.get)
+        getCollectors().set(path + ".respawn", game.isAllowRespawn());
         saveCollectors();
         return "Succesfully saved the config";
     }
@@ -148,7 +148,7 @@ public class ConfigManager {
      * @param uniqueName the unique name also known as the arena
      * @return the path to the game bean
      */
-    public String path(String gameName, String uniqueName){
+    private String path(String gameName, String uniqueName){
         return "Games." + gameName + "." + uniqueName;
     }
 
@@ -181,7 +181,7 @@ public class ConfigManager {
         game.setLobbyLocation(getCollectors().getLocation(path(gameName, uniqueName) + ".lobby"));
         game.setTeamPlayers(getCollectors().getInt(path(gameName, uniqueName) + ".teamPlayers"));
         game.setMinPlayers(getCollectors().getInt(path(gameName, uniqueName) + ".minPlayers"));
-//        game.setAllowRespawn(getCollectors().getBoolean(path(gameName, uniqueName) + ".lobby"));
+        game.setAllowRespawn(getCollectors().getBoolean(path(gameName, uniqueName) + ".respawn"));
         game.setSignLocation(getCollectors().getLocation(path(gameName, uniqueName) + ".sign"));
 
         return game;

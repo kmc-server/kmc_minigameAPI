@@ -44,6 +44,10 @@ commands:
     description: Shows all installed minigames
     usage: /getminigames
     permission: MiniGameApi.Info
+  minigameapi_callback_command:
+    description: This is an internal commmand and should not be used by players
+    permission: MiniGameApi.Callback
+
 
 permissions:
   MiniGameApi:
@@ -60,4 +64,7 @@ permissions:
     default: op
   MiniGameApi.join:
     description: allows to join
+    default: true
+  MiniGameApi.Callback:
+    description: allow callback commands
     default: true

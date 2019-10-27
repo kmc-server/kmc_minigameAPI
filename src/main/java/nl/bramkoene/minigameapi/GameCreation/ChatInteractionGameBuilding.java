@@ -35,22 +35,7 @@ public class ChatInteractionGameBuilding implements Listener {
 
                 cancelChatEvent(event);
                 return false;
-            case CHOOSING_ALLOW_RESPAWN:
-                if(event.getMessage().contains("true")){
-                    gameConfigBean.setAllowRespawn(true);
-                }else if(event.getMessage().contains("false")){
-                    gameConfigBean.setAllowRespawn(false);
-                }
-                try{
-                    BuildMinigame.setBuildGameState(event.getPlayer(), BuildGameState.CHOOSING_MAX_PLAYERS);
-                }catch(Exception e){
-                    Bukkit.getLogger().warning(e.getMessage());
-                    e.printStackTrace();
-                }
-
-                cancelChatEvent(event);
-                return false;
-            case CHOOSING_MAX_PLAYERS:
+            case CHOOSING_MIN_PLAYERS:
 
                 try{
                     gameConfigBean.setMinPlayers(Integer.parseInt(event.getMessage()));
@@ -65,7 +50,7 @@ public class ChatInteractionGameBuilding implements Listener {
             case CHOOSING_TEAM_SIZE:
                 try{
                     gameConfigBean.setTeamPlayers(Integer.parseInt(event.getMessage()));
-                    BuildMinigame.setBuildGameState(event.getPlayer(), BuildGameState.CHOOSING_TEAM_SIZE);
+                    BuildMinigame.setBuildGameState(event.getPlayer(), BuildGameState.SETTING_LOBBY_SPAWN_POINT);
                 }catch(Exception e){
                     Bukkit.getLogger().warning(e.getMessage());
                     e.printStackTrace();

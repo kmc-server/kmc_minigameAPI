@@ -10,11 +10,9 @@ import java.util.Random;
 
 public class SpawnManager {
     private final List<Location> spawnLocations = new ArrayList<>();
-    private final GameConnector game;
     public Location lobbySpawn;
 
     public SpawnManager(GameConnector pl){
-        this.game = pl;
     }
 
     public boolean spawnPlayer(Player player){

@@ -1,5 +1,9 @@
 package nl.bramkoene.minigameapi.teams;
 
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.ComponentBuilder;
+import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -41,5 +45,15 @@ public class TeamManager {
         }
         Team team = playerTeamHashMap.get(leader);
         team.addPlayer(sender);
+    }
+
+    public static void invitePlayer(Player leader, Player target) throws Exception{
+        if(!playerTeamHashMap.containsKey(leader)){
+            throw new Exception("User does not exists");
+        }
+        Team team = playerTeamHashMap.get(leader);
+        ClickEvent accept = new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/jointeam " + leader.getDisplayName() + " jajaja");
+        target.spigot().sendMessage(new TextComponent(ChatColor.YELLOW + "Someone has invited you to their team"));
+        target.spigot().sendMessage(new ComponentBuilder("Click ").color(net.md_5.bungee.api.ChatColor.YELLOW).append("here").event(accept).create());
     }
 }

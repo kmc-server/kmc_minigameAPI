@@ -12,9 +12,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import java.util.Objects;
 
 public class PlayerEventHandler implements Listener {
-    private MiniGameAPI plugin;
     public PlayerEventHandler(MiniGameAPI pl){
-        this.plugin = pl;
     }
 
     @EventHandler
